@@ -9,7 +9,7 @@ def connected_db():
     cursor = base.cursor()
     if base:
         print('Base conected')
-    base.execute("CREATE TABLE IF NOT EXISTS users (user_id INTEGER PRIMARI KEY, user_name TEXT, time_sub INTEGER DEFAULT 0 NOT NULL)")
+    base.execute("CREATE TABLE IF NOT EXISTS users (user_id INTEGER PRIMARY KEY, user_name TEXT, time_sub INTEGER DEFAULT 0 NOT NULL)")
     base.commit()
 
 def days_to_seconds(days):
